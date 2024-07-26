@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IS:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-entrada {
+    position: relative;
+    width: 100%;
+    align-items: center;
+}
+
+.imagem-entrada{
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Escurece a imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto {
+    padding: 100px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.texto h2 {
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.texto h1 {
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 100px;
+}
+
+
+.topico {
+    width: 100%;
+    padding: 100px 250px 100px 250px;
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+}
+
+.titulo-topico {
+    font-weight: 200;
+    color: black;
+    text-transform: uppercase;
+    border: 1px solid rgb(19, 94, 0);
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.texto-topico {
+    padding: 35px 0;
+    color: rgb(78, 78, 78);
+
+}
+
+.titulo-quem {
+    color: goldenrod;
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: 400;
+}
+
+.texto-titulo-quem {
+    color: rgb(78, 78, 78);
+    text-align: justify;
+}
+
+#texto-quem-somos {
+    text-align: justify;
+}
+
+#topico-areas {
+    width: 100%;
+    padding: 100px 150px 100px 150px;
+}
+
+.lista-areas {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 35px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.bloco-areas {
+    display: inline-block;
+	text-align: center;
+    width: 30%;
+	vertical-align: top;
+	margin: 1.5% 1.5%;
+	padding: 25px;
+	box-sizing: border-box;
+	border: 1px solid goldenrod;
+	border-radius: 15px;
+}
+
+.bloco-areas h3 {
+    font-weight: 400;
+	font-size: 20px;
+    color: rgb(78, 78, 78);
+}
+
+.bloco-areas p {
+    margin-top: 10px;
+    font-weight: 300;
+	font-size: 16px;
+    color: rgb(78, 78, 78);
+    text-align: justify;
+}
+
+.lista-profissionais {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0 35px;
+}
+
+.bloco-profissionais{
+	display: inline-block;
+	text-align: center;
+	width: 40%;
+	vertical-align: top;
+	margin: 0 4%;
+	box-sizing: border-box;
+}
+
+.bloco-profissionais h3 {
+	font-weight: 300;
+	font-size: 20px;
+    color: rgb(78, 78, 78);
+}
+
+.bloco-profissionais h4 {
+	font-weight: 300;
+	font-size: 15px;
+    color: rgb(78, 78, 78);
+}
+
+.imagem-container {
+    position: relative;
+}
+
+.imagem-profissionais {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.texto-profissionais  {
+    margin-top: 15px;
+    font-weight: 300;
+	font-size: 15px;
+    color: rgb(78, 78, 78);
+}
+
+.lista-escritorio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+.fotos-do-escritório {
+    flex: 1 1 22%; 
+    margin: 10px; 
+    box-sizing: border-box;
+    overflow: hidden;
+}
+   
+
+.foto-escritorio {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.foto-escritorio:hover {
+    transform: scale(1.1);
+}
+
+
+.map-container {
+    align-items: center;
+    width: 60vw;
+    height: 300px; 
+    margin: 10px 0;
+}
+
+.map-container iframe {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+.formulario-contato {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 40px;
+}
+
+.input-contato, .texto-contato {
+    width: 100%;
+    background-color: rgba(223, 223, 223, 0.384);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.texto-contato {
+    resize: none;
+    max-height: 250px;
+}
+
+form .btn-enviar-contato {
+    margin-top: 30px;
+    text-align: center;
+}
+
+form .btn-enviar-contato button {
+   width: 140px;
+   font-weight: 400;
+   cursor: pointer;
+   transition: 0.5s;
+   background-color: rgba(218, 165, 32, 0.74);
+}
+
+
+form .btn-enviar-contato button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px rgb(218, 165, 32);
+ }
+
+
+ form .btn-enviar-contato button:disabled {
+    cursor: not-allowed;
+    background: rgb(221, 192, 117);
+ }
+
+
+.success{
+    color: rgb(19, 94, 0);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.error {
+    color: tomato;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .texto h2 {
+        font-size: 12px;
+        margin-top: 25px;
+    }
+
+    .texto h1 {
+        font-size: 60px;
+    }
+
+    .texto {
+        padding: 0;
+    }
+
+    .topico {
+        padding: 30px;
+    }
+
+    #topico-areas {
+        padding: 35px;
+    }
+
+    
+    #texto-quem-somos {
+        text-align: justify;
+    }
+    
+
+    .texto-titulo-quem {
+       text-align: justify;
+    }
+
+    .lista-areas {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloco-areas {
+        text-align: center;
+        width: 100%;
+        vertical-align: top;
+        box-sizing: border-box;
+    }
+
+    .bloco-areas p {
+        text-align: justify;
+    }
+
+    .lista-profissionais {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .bloco-profissionais {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .lista-escritorio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 300px; 
+        margin: 10px 0;
+    }
+    
+    .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+}
+
+
+
+@media(min-width: 768px) and (max-width: 1199px){
+    .texto h2 {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .texto h1 {
+        font-size: 60px;
+    }
+
+    .topico {
+        padding: 50PX;
+    }
+
+    .texto {
+        padding: 0;
+    }
+    
+    #texto-quem-somos {
+        text-align: justify;
+    }
+    
+
+    .texto-titulo-quem {
+       text-align: justify;
+    }
+
+    .lista-areas {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloco-areas {
+        text-align: center;
+        width: 100%;
+        vertical-align: top;
+        box-sizing: border-box;
+    }
+
+    .bloco-areas p {
+        text-align: justify;
+    }
+
+    .lista-profissionais {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    
+
+    .bloco-profissionais {
+        width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .lista-escritorio {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .map-container {
+        width: 100%;
+        height: 300px; 
+        margin: 10px 0;
+    }
+    
+    .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+
+
+
+}
+
+
+@media (min-width: 1378px ) and (max-width: 1600px) {
+    
+    .texto h2 {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .texto h1 {
+        font-size: 60px;
+    }
+
+    #texto-quem-somos {
+        text-align: justify;
+    }
+
+    .texto-titulo-quem {
+       text-align: justify;
+    }
+
+    .lista-areas {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 35px;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    .bloco-areas {
+        display: inline-block;
+        text-align: center;
+        width: 30%;
+        vertical-align: top;
+        margin: 1.5% 1.5%;
+        padding: 30px 30px;
+        box-sizing: border-box;
+        border: 1px solid goldenrod;
+        border-radius: 15px;
+    }
+    
+    .bloco-areas h3 {
+        font-weight: 400;
+        font-size: 20px;
+        color: rgb(78, 78, 78);
+    }
+    
+    .bloco-areas p {
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 16px;
+        color: rgb(78, 78, 78);
+    }
+
+
+    #topico-areas {
+        width: 100%;
+        padding: 100px 150px 100px 150px;
+    }
+
+
+    .bloco-areas {
+        padding: 25px;
+        width: 80%;
+    }
+
+
+    .lista-profissionais {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 35px;
+    }
+    
+    .bloco-profissionais{
+        display: inline-block;
+        text-align: center;
+        width: 40%;
+        vertical-align: top;
+        margin: 0 4%;
+        box-sizing: border-box;
+    }
+    
+    .bloco-profissionais h3 {
+        font-weight: 300;
+        font-size: 20px;
+        color: rgb(78, 78, 78);
+    }
+    
+    .bloco-profissionais h4 {
+        font-weight: 300;
+        font-size: 15px;
+        color: rgb(78, 78, 78);
+    }
+
+
+    .lista-escritorio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        padding: 0;
+        list-style-type: none;
+        
+    }
+
+    .fotos-do-escritório {
+        flex: 1 1 21%; 
+        margin: 10px; 
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+       
+    
+    .foto-escritorio {
+        width: 100%;
+        height: 400px;
+        display: block;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+}
+
+
+
+@media (min-width: 1200px ) and (max-width: 1378px) { 
+
+    #topico-areas {
+        width: 100%;
+        padding: 100px 150px 100px 150px;
+    }
+
+    .lista-areas {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bloco-areas {
+        padding: 25px;
+        width: 80%;
+    }
+
+    .bloco-areas p {
+        font-size: 14px;
+    }
+
+}

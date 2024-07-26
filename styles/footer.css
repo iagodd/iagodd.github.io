@@ -1,0 +1,149 @@
+.rodape {
+    background-color: rgb(10, 51, 0);
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.logo-e-redes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-e-redes i {
+    color: rgb(207, 207, 207);
+}
+
+
+.logo-e-redes i:hover {
+    color: goldenrod;
+}
+
+.logo-e-redes a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo-rodape{
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.menu-rodape {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.menu-rodape ul {
+    list-style-type: none;
+}
+
+.menu-rodape h2 {
+    color: rgb(207, 207, 207);
+    padding: 10px;
+    font-weight: 350;
+}
+
+.menu-rodape a {
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+    font-weight: 250;
+    margin-top: 20px;
+    
+}
+
+.menu-rodape a:hover {
+   color :goldenrod 
+}
+
+.contato-rodape{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.contato-rodape ul {
+    list-style-type: none;
+}
+
+.contato-rodape h2 {
+    color: rgb(207, 207, 207);
+    padding: 10px;
+    font-weight: 350;
+}
+
+.contato-rodape p, a {
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+    font-weight: 250;
+    
+}
+
+.contato-rodape p, a:hover {
+    color :goldenrod 
+}
+
+.contato-rodape i {
+    color: rgb(207, 207, 207);
+}
+
+@media (max-width: 768px) {
+
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodape div {
+        padding: 25px;
+    }
+
+    .menu-rodape li {
+        padding: 10px;
+    }
+
+    .contato-rodape li {
+        padding: 10px;
+    }
+
+
+}
+
+
+@media(min-width: 768px) and (max-width: 1199px){ 
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodape div {
+        padding: 25px;
+    }
+
+    .menu-rodape li {
+        padding: 10px;
+    }
+
+    .contato-rodape li {
+        padding: 10px;
+    }
+
+}
+
+
+@media (min-width: 1200px ) and (max-width: 1600px) { 
+
+    
+}
+
